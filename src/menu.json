@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "coffee american",
+      "precio": 5
+    },
+    {
+      "id": 2,
+      "name": "coffee late",
+      "precio": 7
+    },
+    {
+        "id": 3,
+        "name": "sandwich",
+        "precio": 10
+      },
+      {
+        "id": 4,
+        "name": "juice",
+        "precio": 7
+      },
+      {
+        "id": 5,
+        "name": "hamburguesa simple",
+        "precio": 10
+      },
+      {
+        "id": 6,
+        "name": "hamburguesa doble",
+        "precio": 15
+      },
+      {
+        "id": 7,
+        "name": "papas fritas",
+        "precio": 5
+      }, 
+      {
+        "id": 8,
+        "name": "aros de cebolla",
+        "precio": 5
+      },
+      {
+        "id": 9,
+        "name": "Agua 500ml",
+        "precio": 5
+      },
+      {
+        "id": 10,
+        "name": "Agua 750ml",
+        "precio": 7
+      },
+      {
+        "id": 11,
+        "name": "Bebida/gaseosa500ml",
+        "precio": 7
+      },
+      {
+        "id": 7,
+        "name": "Bebida/gaseosa750ml",
+        "precio": 10
+      }
+  ]
+  
