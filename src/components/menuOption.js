@@ -1,5 +1,6 @@
 import React from "react";
-import Menu from "./menu";
+//import Breakfast from "./breakfast";
+import { Link } from "react-router-dom";
 
 const MenuOption = (prop) => {
   return (
@@ -7,25 +8,12 @@ const MenuOption = (prop) => {
       <h3>Menu</h3>
 
       <section className="section__option">
-        <button
-          className="secondary-button"
-          onClick={(e) => {
-            e.preventDefault();
-            /*  setTypeFood("Breakfast") */
-          }}
-        >
-          Breakfast
-        </button>
-          <Menu/>
-        <button
-          className="secondary-button"
-          onClick={(e) => {
-            e.preventDefault();
-            /*   setTypeFood("Lunch"); */
-          }}
-        >
-          Lunch
-        </button>
+      <Link to="/breakfast">
+      <button className='btn-warning btn-large'>Breakfast</button>
+      </Link>
+      <Link to="/lunch">
+      <button className='btn-warning btn-large'>Lunch</button>
+      </Link>
       </section>
     </form>
   );

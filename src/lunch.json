@@ -1,24 +1,5 @@
 [
-    {
-      "id": 1,
-      "name": "coffee american",
-      "precio": 5
-    },
-    {
-      "id": 2,
-      "name": "coffee late",
-      "precio": 7
-    },
-    {
-        "id": 3,
-        "name": "sandwich",
-        "precio": 10
-      },
-      {
-        "id": 4,
-        "name": "juice",
-        "precio": 7
-      },
+  
       {
         "id": 5,
         "name": "hamburguesa simple",
@@ -55,7 +36,7 @@
         "precio": 7
       },
       {
-        "id": 7,
+        "id": 12,
         "name": "Bebida/gaseosa750ml",
         "precio": 10
       }
