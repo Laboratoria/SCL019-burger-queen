@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter,Route, Routes} from "react-router-dom";
+import WaiterView from "./views/WaiterView";
+import StartView from "./views/StartView";
+import ChefView from "./views/ChefView";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <BrowserRouter>
+      <Routes>
+      <Route path='/' element={<StartView/>}/>
+        <Route path='/tables' element={<WaiterView/>} />
+        <Route path='/kitchen' element={<ChefView />} />
+       
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
