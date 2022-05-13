@@ -1,0 +1,14 @@
+    
+.container-home{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.container-button-home{
+    /* justify-items: center; */
+    /* justify-content: center; */
+    justify-content: space-between;  
+    /* display: grid; */
+    
+
+}

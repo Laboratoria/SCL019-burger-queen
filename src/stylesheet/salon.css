@@ -1,0 +1,27 @@
+.container-salon{
+    display: grid;
+    justify-content: center;
+}
+.container-logo{
+    display: flex;
+    justify-content: space-between;
+}
+.text-salon{
+    font-size:  50px;
+    margin-top: 150px;
+}
+.comandas{
+    width: 500px;
+    height: 500px;
+    background-color:darkgray;
+    margin-top: 50px;
+}
+.button-agregar-usuario{
+    display: flex;
+    justify-content: flex-end;
+}
+.img-agregar-usuario{
+    width: 100px;
+    height: 100px;
+
+}

@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.menu-one{
+    border: green 5px solid;
+    flex-direction: row;
+}
+
+.button-menu{
+    display: flex;
+    flex-direction: column;
+    border: red 5px solid;
+
+}
+
+.button-dishes {
+    width: 150px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: #750C39;
+    color: #fff;
+    border:black;
+    margin: 10px 10px 20px;
+    font-family: 'Denk One', sans-serif;
+
+}
+
