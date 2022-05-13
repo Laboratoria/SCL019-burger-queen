@@ -1,4 +1,4 @@
-import lunch from "../lunch.json"
+ import lunch from "../lunch.json"
 import Button from "./button"
 import { Link } from "react-router-dom"
 const Lunch = () => {
@@ -16,4 +16,4 @@ const Lunch = () => {
 
     )
 }
-export default Lunch
+export default Lunch 
