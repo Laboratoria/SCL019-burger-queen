@@ -1,10 +1,32 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html {
+html, 
+body {
   font-size:18px;
-  background-color:#FFD4DE;
+  background-color:#FFD4DE; 
+  font-family: 'Denk One', sans-serif;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
   
 }
+
+button {
+  width: 150px;
+  height: 100px;
+  border-radius: 30px;
+  background-color: #750C39;
+  color: #fff;
+  border:black;
+  margin: 10px 10px 20px;
+  font-family: 'Denk One', sans-serif;
+  cursor:pointer;
+}
+
+.crosshair {cursor: crosshair;}
