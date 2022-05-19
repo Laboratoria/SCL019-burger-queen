@@ -1,10 +1,19 @@
+import { db } from "../firebase/firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
+
 const Cart = (props) => {
-  const { cartItems, onAdd, onRemove } = props;
+  const { cartItems, onAdd, onRemove, setCartItems } = props;
   const precioFinal = cartItems.reduce(
     (acumulador, actual) => acumulador + actual.precio * actual.qty,
     0
   );
-
+  const traerMenu = async () => {
+    await addDoc(collection(db, "menu"), {
+      precioFinal: precioFinal,
+      item: cartItems,
+    });
+    setCartItems([]); //para vaciar el carrito
+  };
   return (
     <>
       <h2> Pedido</h2>
@@ -23,10 +32,11 @@ const Cart = (props) => {
             {item.qty} x ${item.precio}
           </div>
         ))}
+
         {cartItems.length !== 0 && <p>Total ${precioFinal}</p>}
 
         <div className="row">
-          <button onClick={() => alert("Implement Checkout!")}>Checkout</button>
+          <button onClick={() => traerMenu()}>Checkout</button>
         </div>
       </div>
     </>

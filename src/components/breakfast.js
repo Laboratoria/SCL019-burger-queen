@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import breakfast from "../breakfast.json";
 //import Button from "./button"
 import { useState } from "react";
-import Cart from "./order";
+import Cart from "./cart";
 /* import { traerMenu } from "../firebase/firebaseFunctions" */
 
 const Breakfast = () => {
@@ -19,6 +19,8 @@ const Breakfast = () => {
     } else {
       setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
+
+
   };
 
   const onRemove = (product) => {
