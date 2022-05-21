@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+body{
+  background-color: #573f03;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: 82% 60%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  
+}
+
+.cont-menu-1-y-2{
+  background-color: transparent;
+  border: solid #F0C24B 6px;
+  border-radius: 150px 0 150px 0;
+  width: 96%;
+  height: 37.2em;
+  margin: 1% 1% 1% 2%;
+}
+
+.cont-menu{
+  background-color: transparent;
+  border: solid #F0C24B 6px;
+  border-radius: 0px 0 150px 0;
+  width: 96%;
+  height: 28em;
+  margin: -5% 1% 1% 2%;
+}
+
+
+.App {
+  text-align: center;
+}
+
+
+h1{
+  font-family: 'Satisfy';
+  color:#C5F2ED;
+  font-size: 540%;
+  margin: 1% 0% 3% 5%;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.title-cocina{
+  margin: -6% 0 0 8%;
+  
+}
+
+h2{
+  background-color: #61dafb;
+  color: rgb(67, 52, 3);
+  font-size: 5em;
+}
+.content-Button{
+  display: flex;
+  flex-direction: column;
+  margin:-40% 70% 0 0;
+  font-family: 'Satisfy';
+}
+
+.btnMesa{
+  background-image: url(../public/img/texturaRed.png);
+  width: 50%;
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 0.5% 50% 0.5% 30%;
+  margin: 16% 0 0 40%;
+  font-family: 'Satisfy';
+  font-size: 2em;
+  text-align: center;
+}
+
+.btnMesa:hover{
+  background-image: url(../public/img/texturaBrown.png);
+  
+}
+
+.btnCocina{
+  background-image: url(../public/img/texturaBrown.png);
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 0.5% 54% 0.5% 25%;
+  margin: 25% 0 0 40%;
+  font-family: 'Satisfy';
+  font-size: 2em;
+  
+}
+
+.btnCocina:hover{
+  background-image: url(../public/img/texturaRed.png);
+}
+
+/* .btnCaja{
+  background-image: url(../public/img/texturaBrown.png);
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 0.5% 54% 0.5% 25%;
+  margin: 16% 0 0 40%;
+  font-family: 'Satisfy';
+  font-size: 2em;
+}
+
+.btnCaja:hover{
+  background-image: url(../public/img/texturaRed.png);
+} */
+
+.winpy{
+  width: 40%;
+  margin-top: 8%;
+  margin-right: 10%;
+}
+
+.content-ButtonBack{
+  text-align: end;
+  
+}
+
+.backBtn{
+  width: 6%;
+  margin: -21% 5% 0 0;
+
+}
+
+.background-mesa-cocina{
+  width: 98%;
+  height: 530px;
+  background-image: url('../public/img/fondomesacocina.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  margin-left: 1%;
+  margin-top: 1%;
+  border: solid #EC683B 7px;
+  border-radius: 10px 10px 110px 10px;
+  z-index: 100;
+  
+     
+}
+
+.background-mesa-cocina2{
+  width: 98%;
+  height: 530px;
+  background-image: url('../src/img-jsx/fondoCocina.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  margin-left: 1%;
+  margin-top: 1%;
+  border: solid #EC683B 7px;
+  border-radius: 10px 10px 110px 10px;
+  z-index: 100;
+   
+}
+
+.background-mesa-cocina3{
+  width: 98%;
+  height: 530px;
+  background-image: url('../src/img-jsx/fondoCaja.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  margin-left: 1%;
+  margin-top: 1%;
+  border: solid #EC683B 7px;
+  border-radius: 10px 10px 110px 10px;
+  z-index: 100;
+   
+}
+
+
+
+.input-name{
+  border: solid #222 2px;
+  border-radius: 8px;
+  margin: -1% 0  4% 5%;
+  font-weight: bold;
+  width: 90%;
+    
+  
+ 
+}
+
+
+ #menu1, #menu2{
+  width: 20%;
+  margin-top: 1%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index:1;
+ 
+  
+ }
+
+ .contentMenu{
+   margin: 0;
+ }
+
+  
+ 
+.btn-danger{
+  margin-left:-40%;
+  width: 19%;
+  background-color: #573f03;
+  border: solid #EC683B 4px;
+}
+
+.btn-danger:hover{
+  background-color: #EC683B;
+  
+}
+
+
+.btn-warning{
+  width: 130%;
+  margin-top:3%;
+  background-color: #5E4C1F;
+  color:#FFFBF2;
+  box-shadow:2px 2px 5px #573f03;
+  font-weight: bold;
+  
+}
+
+
+.bloc-tabs {
+  display: flex;
+  margin: 3% 0 0 1%;
+  width: 100%;
+  
+  
+}
+
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 14%;
+  height: 28px;
+  background-color: #573f03;
+  color:#F0C24B;
+  font-weight: bold;
+  font-family: 'Satisfy';
+  font-size: 140%;
+  cursor: pointer;
+  margin:  0 0 0 0.5%;
+  box-sizing: content-box;
+  position: relative;
+  box-shadow:2px 2px 5px #573f03;
+  /* outline: none; */
+  
+}
+
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+  box-shadow: #573f03;
+ 
+}
+
+.active-tabs  {
+  background-color:#F0C24B;
+  color:#222;
+  border-bottom: 1px solid #EC683B;
+  font-weight: bold;
+  font-family: 'Satisfy';
+  font-size: 140%;
+  box-shadow:2px 2px 5px #573f03;
+  margin:0;
+}
+
+.active-tabs::before {
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 1px;
+  margin:0;
+  
+ 
+ 
+}
+
+button {
+  border: solid #EC683B 3px;
+  border-radius: 10px;
+  width: 10%;
+  
+
+  
+}
+
+.content {
+  background: #573f03;
+  padding: 0px;
+  width: 100%;
+  height: 1%;
+  display: none;
+  
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+ 
+}
+
+
+.T{
+  background-color: transparent;
+  width: 100%;
+  margin:0;
+  padding:0;
+ 
+  
+}
+
+
+#iconAdd, #iconRest, #iconDelete{
+  width: 25%;
+}
+
+.orderContent{
+  background-color: #F0C24B;
+  width: 58%;
+  height: 85%;
+  margin: -10% 0 0 40%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 0;
+  font-size: 1.1em;
+  border: solid #573f03 2px;
+  border-radius: 10px;
+  z-index: 100;
+  box-shadow:2px 2px 5px #573f03;
+  overflow: auto;
+  
+  
+}
+ 
+thead{
+  font-size: 1em;
+}
+th{
+  font-family: 'Satisfy';
+  width: 15,5%;
+ 
+
+}
+
+
+#btnEnviar{
+  margin: 0 0 0 -10%;
+  box-shadow:2px 2px 5px #573f03;
+  font-family: 'Satisfy';
+  font-size: 1.2em;
+  width: 50%;
+  padding: 0;
+ 
+}
+
+.contTotalEnviar{
+  display:flex;
+  flex-direction: row;
+}
+.contBtnEnviar{
+  width: 90%;
+  margin:2% 0 0 6%;
+  position: relative;
+
+}
+
+.contTotal{
+  width: 40%;
+  margin: 3% 6% 0 0;
+  position: relative;
+}
+
+
+
+.btn-remove{
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.tfoot{
+  text-align: right;
+  margin-right: 10%;
+}
+
+.pilonAimado{
+  border: solid #877851 8px;
+  border-radius: 30%;
+  
+}
+
+.contentCocina{
+margin-top: 1%;
+width: 100%;
+}
+
+.contentCocina{
+  margin-top: 1%;
+  width: 100%;
+  overflow-y: scroll;
+  }
+
+.list-group-item{
+  font-weight: bold;
+}
+
+.list-group-item2{
+  margin-top: 3%;
+}
+
+.list-group-item, .list-group-item2{
+background-color: transparent;
+width: 30%;
+padding: 0%;
+margin: -1% 3% -4% 4%;
+border:none;
+border-radius: 10px;
+
+}
+
+.list-group{
+  text-align: left;
+}
+
+.btnDelete{
+  margin: 10% 0 0 0;
+  width: 80%;
+}
+
+
+
+
+.sectionPedidos1{
+  background-color: #222;;
+  color: #FFFBF2;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 2% 2% 2% 2%;
+  padding: 0%;
+  border: solid #F0C24B 2px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  box-shadow:2px 2px 5px #222;
+
+}
+
+.sectionPedidos2{
+  background-color: #222;
+  color: #573f03;
+  text-align: left;
+  margin: 2%;
+  padding: 2%;
+  border: solid #C5F2ED 2px;
+  border-radius: 10px;
+  width: 40%;
+  box-shadow:2px 2px 5px #222;
+  
+  
+}
+
+.status{
+  color: rgb(248, 69, 69);
+}
+
+
+#cocina, #cocina2{
+  margin: 1%;
+ }
+
+.spanPedido{
+  color: #222;
+  margin: 1%;
+}
+
+.spanStatus2{
+color: #EC683B;
+}
+
+.spanStatus1{
+  color:yellow;
+}
+
+.contentPedidos{
+  margin-left: 5%;
+  width: 200%;
+  margin-top: -3%;
+  overflow: scroll;
+  
+}
+
+.btnEntrega{
+  background-color: #EC683B;
+  border: solid #C5F2ED 2px;
+  margin: 10% 0 0 0;
+  width: 70%;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.btnEntrega:hover{
+  background-color: #C5F2ED ;
+  color: #222;
+ 
+  
+}
+
+.btnArchivo{
+  background-color: #c2b490;
+  color: #222;
+  margin: 10% 0 0 0;
+  width: 80%;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.btnArchivo:hover{
+  background-color: #C5F2ED;
+  color: #222;
+}
+
+
+.tablePedidos{
+    width: 100%;
+    flex-wrap:nowrap;
+    
+    
+}
+
+
+.thPedidos{
+  width: auto;
+  height: auto;
+  margin:0;
+  font-family:'Courier New', Courier, monospace;
+  
+  
+}
+
+
+.x-delete{
+  margin:2% 0 0 84%;
+  border: solid #F0C24B;
+  color: #EC683B;
+  border-radius: 5px;
+  width: 14%;
+  
+}
+
+
