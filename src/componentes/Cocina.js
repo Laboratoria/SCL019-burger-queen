@@ -5,7 +5,7 @@ import '../filesCss/Menu.css';
 import logo2 from '../imagenes/logo2.jpg';
 import {Link} from "react-router-dom";
 import { collection, onSnapshot, query, orderBy, 
-} from  'https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js';
+} from  'firebase/firestore';
 import { db } from "../firebase";
 
 

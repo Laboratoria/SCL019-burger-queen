@@ -1,8 +1,10 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+import "firebase/firestore";
+
+import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import { getFirestore, collection, getDocs, addDoc, Timestamp, orderBy } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js';
+import { getFirestore, collection, getDocs, addDoc, Timestamp, orderBy } from 'firebase/firestore';
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCCYSPe--5BHCKnYNEtTQJ4QjEcaBukkmY",

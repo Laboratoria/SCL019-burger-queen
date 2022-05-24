@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import '../filesCss/status.css';
 import { db } from "../firebase";
 import React, { useState } from "react";
-import { updateDoc, doc, deleteDoc } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js';;
+import { updateDoc, doc, deleteDoc } from 'firebase/firestore';
 
 
 
