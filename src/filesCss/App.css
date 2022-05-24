@@ -53,11 +53,11 @@ width: 15%;
 a:link, a:visited, a:active{
   text-decoration:none;
 }
-/* .App h3{
+ .App h3{
   padding:3px 3px 8px 10px;
   font-size: 20px;
   color:rgb(29, 71, 17);
-} */
+} 
 
 @keyframes App-logo-spin {
   from {
