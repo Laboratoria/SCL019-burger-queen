@@ -1,11 +1,13 @@
 import {useEffect, useState, Fragment} from "react";
-// import {Carta} from "../firebase";
+import { ButtonStatus } from "./Status";
 import '../filesCss/Menu.css';
+
 import logo2 from '../imagenes/logo2.jpg';
 import {Link} from "react-router-dom";
 import { collection, onSnapshot, query, orderBy, 
 } from  'https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js';
 import { db } from "../firebase";
+
 
 function Cocina() {
 
@@ -33,7 +35,7 @@ function Cocina() {
 
         <div className="Menu">
             <header className="Menu-header">
-                {/* //MEnu-header tiene todo el diseño del header y llega hasta  */}
+             
                 <div className="MenuLogo">
                     <img src={logo2}
                         className="Menu-logo"
@@ -67,18 +69,11 @@ function Cocina() {
                       } className="caja">
                             <Fragment>
                               
-                                <p>nombre:<b> {
-                                        item.nombre
-                                    }</b>
-                                </p>
-
-                                <p>mesa:<b> {
+                                <p><b>Mesa: {
                                         item.mesa
                                     }</b>
                                 </p>
-                               <p>fecha: {item.status}</p> 
-
-                              {/* <p>fecha: {item.fecha}</p> */}
+                               <p>Estado:<b>{item.status}</b> </p> 
                                    
                                 <p>Orden:<b> {
                                         item.pedido.map((arr) => (
@@ -95,8 +90,13 @@ function Cocina() {
                                         ))
                                     }</b>
                                 </p>
+                                
+               
                                 {/* <button className='Eliminar' type='button'>X</button> */}
                             </Fragment>
+                 <div className='cocina'> 
+                    <ButtonStatus id={item.id} status={item.status} />
+                </div>
                         </div>
                     )
 

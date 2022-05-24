@@ -4,7 +4,7 @@ import Menu from './componentes/Menu.js';
 // import Home from './componentes/Home.js';
 import Cocina from './componentes/Cocina.js';
 import './filesCss/App.css';
-import Welcome from './componentes/addpedido.js';
+import Welcome from './componentes/Welcome';
 //import './filesCss/App.css';
 import { Routes, Route } from "react-router-dom";
 

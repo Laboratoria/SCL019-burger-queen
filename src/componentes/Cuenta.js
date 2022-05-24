@@ -55,8 +55,8 @@ return item.id === id ? { ...item, count: 1 } : item;
                 
    <thead>
     <tr>
-      <th scope="col">Cantidad</th>
-      <th scope="col">Producto</th>
+      {/* <th scope="col">Cantidad</th> */}
+      <th scope="col">Cantidad/Producto</th>
       <th scope="col">Quitar</th>
       <th scope="col">Precio</th>
     </tr>
@@ -68,10 +68,10 @@ return item.id === id ? { ...item, count: 1 } : item;
                        <Fragment key={ element.id}> 
       
    <tr>
-      <th scope="row">{element.count}</th>
-      <td><span><b>  {element.producto}</b> </span></td>
-      <td><button className='btnes2'onClick={() => restProduct(element.id)}> - </button>
-      <button className='Eliminar' type='button' onClick={() => quitBurger(element.id)}>X</button> </td>
+      <th scope="row"># {element.count}</th>
+      <td><span><b> {element.producto}</b> </span></td>
+      <td><button className='btnes2'onClick={() => restProduct(element.id)}> Quitar </button>
+      <button className='Eliminar' type='button' onClick={() => quitBurger(element.id)}> Eliminar</button> </td>
       <td><span><b> {element.count} x ${element.precio} </b></span></td>
     </tr>
                         

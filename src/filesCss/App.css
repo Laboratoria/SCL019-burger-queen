@@ -41,8 +41,9 @@
   margin-top: 2%;
 /* padding:10px 25px 10px 15px; */
 background-color: #96e550;
+
 /* color: black; */
-border-radius: 8px; 
+border-radius: 5px; 
 border:none;
 padding: 7px;
 text-align: center;
@@ -52,11 +53,11 @@ width: 15%;
 a:link, a:visited, a:active{
   text-decoration:none;
 }
-.App h3{
+/* .App h3{
   padding:3px 3px 8px 10px;
   font-size: 20px;
   color:rgb(29, 71, 17);
-}
+} */
 
 @keyframes App-logo-spin {
   from {

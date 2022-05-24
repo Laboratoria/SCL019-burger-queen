@@ -36,17 +36,20 @@ margin:1%
 
 }
 .btn-exit{
-  padding: 7px;
+  /* padding: 7px; */
   text-align: center;
-  width: 50%;
+  width: 7vw;
+  height: 5.6vh;
   background: #96e550;
-  
+  border: none;
     cursor: pointer;
+    border-radius: 5px;
     /* border-bottom: 1px solid rgba(214, 10, 10, 0.274); */
     box-sizing: content-box;
     position: relative;
     outline: none;
     margin: 5px;
+    
 }
 
 a:link, a:visited, a:active{
@@ -98,3 +101,6 @@ a:link, a:visited, a:active{
   background-color:  rgb(236, 222, 96);;
 
 }
+/* .cocina{
+  display:flex;
+} */
