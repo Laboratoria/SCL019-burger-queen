@@ -41,10 +41,12 @@ const NameAndTable = ({datos, setDatos}) => {
             <div className='datospadre'>  
             <div className='datos'>
              
-                <td><p>Nombre <h3>{ datos.nombre}</h3></p></td>
-               <td><p>Mesa<h3> {
+                <td><p>Nombre</p>
+                     <h3>{ datos.nombre}</h3></td>
+               <td><p>Mesa</p>
+               <h3> {
                     datos.mesa
-                }</h3></p></td>
+                }</h3></td>
 
              
             </div>

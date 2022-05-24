@@ -12,7 +12,8 @@ const enviarPedido =  async (carro, datos)=> {
   setcarga(true);
   await AddPedido({
     ...datos, 
-    pedido:carro
+    pedido:carro,
+   
   })
   setcarga(false);
 }
@@ -40,11 +41,12 @@ return item.id === id ? { ...item, count: 1 } : item;
 
   const todoTotal= carro.reduce((valorprevio, valoractual) =>
           valorprevio + valoractual.count * valoractual.precio, 0)
+//función hora
 
 
 
     return (
-      <div className='pedido'>
+      <section className='pedido'>
    <table summary='Pedido BurgerQueen'>
         {/* <caption>Un resumen de los grupos de música punk más famosos del Reino Unido</caption> */}
             
@@ -64,7 +66,7 @@ return item.id === id ? { ...item, count: 1 } : item;
                     carro.map((element) => {
                       return(
                        <Fragment key={ element.id}> 
-        <tbody>
+      
    <tr>
       <th scope="row">{element.count}</th>
       <td><span><b>  {element.producto}</b> </span></td>
@@ -72,7 +74,7 @@ return item.id === id ? { ...item, count: 1 } : item;
       <button className='Eliminar' type='button' onClick={() => quitBurger(element.id)}>X</button> </td>
       <td><span><b> {element.count} x ${element.precio} </b></span></td>
     </tr>
-    </tbody>                    
+                        
                       </Fragment>               
                       )               
                    })
@@ -97,7 +99,7 @@ return item.id === id ? { ...item, count: 1 } : item;
            
     }
            
-             </div>
+             </section>
             
       
     )
@@ -119,18 +121,5 @@ export default Cuenta;
 // es llamada, entregandole un elemento del useState recorrido, por ejempplo Carro.
 // pareciera que en donde se encuentra el useState es el componente padre
 
-// botones total sin uso.
-// <div className='total-'>
-//      <span><b> {count} x ${precio} = </b></span>
-// </div>
-// <div className='total-1'>
-//      <span><b> {count * precio} </b></span>
-// </div>
-// <div className='total-2'>
-// <span><b> {totalPedido} </b></span>
-// </div>
-      /* <button className='btnes'onClick={() => setCount(count +1 )}> + </button> 
-        
-         // value={[element.producto, element.precio, element.id, element.count]} */
 
  

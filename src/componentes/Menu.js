@@ -41,7 +41,7 @@ function Menu({pedido, setpedido}) {
   export default Menu;
 
 //                                Home
-  //                       Menu                Cocina          --es padre de 
+  //                  Menu                Cocina          --es padre de 
   //           Cuenta     Tabs       
   //   NameAndTable        Breakfast
   //      |    

@@ -1,4 +1,3 @@
-
 import React from "react";
 import "../filesCss/Desayuno.css"
 
@@ -6,7 +5,7 @@ import "../filesCss/Desayuno.css"
 
 function Breakfast ({menu, setcarro, carro, burger}){
   // boton agregar al carro
-  const [producto, precio, id,] = burger;
+  const [producto, precio, id] = burger;
 
 const addBurger = ((id) => {
     //  if(menu.filter((see) => see.id === id)){

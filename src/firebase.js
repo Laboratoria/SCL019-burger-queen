@@ -2,7 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import { getFirestore, collection, getDocs, addDoc } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js';
+import { getFirestore, collection, getDocs, addDoc, Timestamp, orderBy } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js';
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCCYSPe--5BHCKnYNEtTQJ4QjEcaBukkmY",
@@ -15,7 +15,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-const db = getFirestore();
+export const db = getFirestore();
 
 
 export async function Desayuno () {
@@ -43,13 +43,18 @@ return array;
 }
 
  export async function AddPedido (objeto) {
- await addDoc(collection(db, "Pedido"), objeto);
+ await addDoc(collection(db, "Pedido"),{
+  ...objeto,
+   fecha: Timestamp.fromDate(new Date()),
+   status: "Pendiente",
+  });
  }
  
  export async function Carta() {
   initializeApp(firebaseConfig)
-  const querySnapshot = await getDocs(collection(db, "Pedido"));
+  const querySnapshot = await getDocs(collection(db, "Pedido"), orderBy('fecha', 'desc'));
   const arra =[];
   querySnapshot.forEach((doc) => arra.push(Object.assign(doc.data(), {'id': doc.id})))
   return arra;
   }
+  
